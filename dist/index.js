@@ -7,6 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require('react');
+var _propTyes = require('prop-types');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -90,11 +91,11 @@ var Hr = function (_Component) {
 }(_react.Component);
 
 Hr.propTypes = {
-    lineStyle: _react.PropTypes.shape({}),
-    text: _react.PropTypes.string,
-    marginLeft: _react.PropTypes.number,
-    marginRight: _react.PropTypes.number,
-    textStyle: _react.PropTypes.shape({})
+    lineStyle: _propTyes.shape({}),
+    text: _propTyes.string,
+    marginLeft: _propTyes.number,
+    marginRight: _propTyes.number,
+    textStyle: _propTyes.shape({})
 };
 
 Hr.defaultProps = {
